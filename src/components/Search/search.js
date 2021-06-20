@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const Search = ({handleSortByName, handleSortByPhone, handleByName}) => {
+const Search = ({handleSortByName, handleSortByPhone, handleByName, searchTerm}) => {
     return (
         <div className='App-search'>
             <button name='name' className='rounded' onClick={handleSortByName}>
@@ -10,7 +10,7 @@ const Search = ({handleSortByName, handleSortByPhone, handleByName}) => {
             <button name='phone' className='rounded button' onClick={handleSortByPhone}>
                 Phone
             </button>
-            <input type='text' className='ms-auto' placeholder="Search Employee Name" onInput={handleByName} />
+            <input value={searchTerm} type='text' className='ms-auto' placeholder="Search Employee Name" onInput={handleByName} />
         </div>
     )
 };
