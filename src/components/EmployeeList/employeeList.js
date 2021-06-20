@@ -1,6 +1,7 @@
 import React from 'react';
+import EmployeeCard from '../EmployeeCard/employeeCard';
 
-const EmployeeList = () => {
+const EmployeeList = ({employees}) => {
     return (
         <div className='App-employeeList'>
             <div className='employeeListTop'>
@@ -20,7 +21,18 @@ const EmployeeList = () => {
                     DOB
                 </p>
             </div>
-            
+            {employees.map((item) => {
+                return (
+                    <EmployeeCard 
+                        picture={item.picture}
+                        name={item.name}
+                        phone={item.phone}
+                        email={item.email}
+                        dob={item.dob}
+                        key={item.key}
+                    />
+                )
+            })}
         </div>
     )
 };
