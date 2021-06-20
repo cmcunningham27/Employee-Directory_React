@@ -2,8 +2,11 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-Red.svg)
 
 ## Descriptions
-![Screenshot](./assets/images/Screenshot.png)
-![Screenshot](./assets/images/Screenshot1.png)
+![Beginning](./assets/images/start.png)
+![Start Employees](./assets/images/employees.png)
+![Sort By Name](./assets/images/name.png)
+![Sort By Phone](./assets/images/phone.png)
+![Employee Name](./assets/images/emp_name.png)
 
 ## Repository
 [Application Repository URL](https://github.com/cmcunningham27/Employee-Directory_React)
