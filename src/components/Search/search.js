@@ -9,6 +9,7 @@ const Search = () => {
             <button name='phone' className='rounded button'>
                 Phone
             </button>
+            <input type='text' className='ms-auto' placeholder="Search Employee Name"/>
         </div>
     )
 };
