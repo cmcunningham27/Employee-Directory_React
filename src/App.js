@@ -38,8 +38,10 @@ class App extends Component {
   handleSortByName = () => {
     if(!this.state.sorted) {
       this.setState({ employees: this.state.employees.sort((a, b) => (a.name > b.name) ? 1 : -1) });
+      this.setState({ sorted: true });
     } else {
       this.setState ({ employees: this.state.employees.sort((a, b) => (a.name > b.name) ? -1 : 1) });
+      this.setState({ sorted: false });
     }
   }
 
