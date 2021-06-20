@@ -60,6 +60,10 @@ class App extends Component {
     }
   };
 
+  handleByName = (event) => {
+    this.setState({ searchTerm: event.target.value.toLowerCase() });
+  }
+
   render() {
     return (
       <div className='App'>
