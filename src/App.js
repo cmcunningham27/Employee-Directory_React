@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import API from './utils/API';
 import Header from './components/Header/header';
 import Wrapper from './components/Wrapper/wrapper';
 import Search from './components/Search/search';
