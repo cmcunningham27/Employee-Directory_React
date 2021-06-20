@@ -71,7 +71,7 @@ class App extends Component {
 
     let list;
     if(!this.state.nameSorted) {
-
+      list = <EmployeeList employees={this.state.employees} formatDate={this.formatDate} />;
     } else {
 
     };
