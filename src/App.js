@@ -63,6 +63,7 @@ class App extends Component {
 
   handleByName = (event) => {
     this.setState({ searchTerm: event.target.value.toLowerCase() });
+    this.setState({ filteredEmployees: this.state.employees.filter(employee => employee.name.toLowerCase().startsWith(this.state.searchTerm.toLowerCase())) });
   }
 
   render() {
