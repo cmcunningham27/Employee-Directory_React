@@ -13,6 +13,12 @@ const EmployeeList = () => {
                 <p className='parg-3'>
                     Phone
                 </p>
+                <p className='parg-4'>
+                    Email
+                </p>
+                <p className='parg-5'>
+                    DOB
+                </p>
             </div>
             
         </div>
