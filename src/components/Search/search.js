@@ -6,6 +6,9 @@ const Search = () => {
             <button name='name' className='rounded'>
                 Name
             </button>
+            <button name='phone' className='rounded button'>
+                Phone
+            </button>
         </div>
     )
 };
