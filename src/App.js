@@ -11,7 +11,8 @@ class App extends Component {
     employees: [],
     sorted: false,
     nameSorted: false,
-    searchTerm: ''
+    searchTerm: '',
+    filteredEmployees: []
   };
 
   componentDidMount() {
