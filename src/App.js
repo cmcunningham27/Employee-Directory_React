@@ -8,7 +8,8 @@ import './App.css';
 
 class App extends Component {
   state = {
-    employees: []
+    employees: [],
+    sorted: false
   };
 
   componentDidMount() {
@@ -33,6 +34,14 @@ class App extends Component {
     let dob = date.toLocaleDateString();
     return dob;
   };
+
+  handleSortByName = () => {
+    if(!this.state.sorted) {
+
+    } else {
+
+    }
+  }
 
   render() {
     return (
