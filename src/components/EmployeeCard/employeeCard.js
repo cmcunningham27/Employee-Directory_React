@@ -13,6 +13,9 @@ const EmployeeCard = ({picture, name, phone, email, dob}) => {
             <p className="email">
                 {email}
             </p>
+            <p className="dob">
+                {dob}
+            </p>
         </div>
     )
 };
