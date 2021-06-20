@@ -81,7 +81,7 @@ class App extends Component {
         <Header />
         <Wrapper backgroundColor='#ECF0F1'>
           <Search handleSortByName={this.handleSortByName} handleSortByPhone={this.handleSortByPhone} handleByName={this.handleByName}/>
-          <EmployeeList employees={this.state.employees} formatDate={this.formatDate}/>
+          {list}
         </Wrapper>
       </div>
   )
