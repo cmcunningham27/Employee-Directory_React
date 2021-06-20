@@ -1,7 +1,7 @@
 import React from 'react';
 import EmployeeCard from '../EmployeeCard/employeeCard';
 
-const EmployeeList = ({employees}) => {
+const EmployeeList = ({employees, formatDate}) => {
     return (
         <div className='App-employeeList'>
             <div className='employeeListTop'>
@@ -22,13 +22,15 @@ const EmployeeList = ({employees}) => {
                 </p>
             </div>
             {employees.map((item) => {
+                const dob = formatDate(item.dob);
+
                 return (
                     <EmployeeCard 
                         picture={item.picture}
                         name={item.name}
                         phone={item.phone}
                         email={item.email}
-                        dob={item.dob}
+                        dob={dob}
                         key={item.key}
                     />
                 )
