@@ -10,6 +10,9 @@ const EmployeeCard = ({picture, name, phone, email, dob}) => {
             <p className="phone">
                 {phone}
             </p>
+            <p className="email">
+                {email}
+            </p>
         </div>
     )
 };
