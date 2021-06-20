@@ -9,7 +9,8 @@ import './App.css';
 class App extends Component {
   state = {
     employees: [],
-    sorted: false
+    sorted: false,
+    nameSorted: false
   };
 
   componentDidMount() {
@@ -39,9 +40,11 @@ class App extends Component {
     if(!this.state.sorted) {
       this.setState({ employees: this.state.employees.sort((a, b) => (a.name > b.name) ? 1 : -1) });
       this.setState({ sorted: true });
+      this.setState({ nameSorted: false });
     } else {
       this.setState ({ employees: this.state.employees.sort((a, b) => (a.name > b.name) ? -1 : 1) });
       this.setState({ sorted: false });
+      this.setState({ nameSorted: false });
     }
   }
 
