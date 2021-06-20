@@ -8,7 +8,24 @@ import './App.css';
 class App extends Component {
   state = {
     employees: []
-  }
+  };
+
+  componentDidMount() {
+    API.getEmployees()
+      .then((res) => {
+        this.setState({
+          employees: res.data.results.map((e, i) => ({
+            picture: e.picture.thumbnail,
+            name: `${e.name.first} ${e.name.last}`,
+            phone: e.phone,
+            email: e.email,
+            dob: e.dob.date,
+            key: i
+          }))
+        })
+      })
+      .catch(err => console.log(err));
+  };
 
   render() {
     return (
