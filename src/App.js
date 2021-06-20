@@ -46,7 +46,19 @@ class App extends Component {
       this.setState({ sorted: false });
       this.setState({ nameSorted: false });
     }
-  }
+  };
+
+  handleSortByPhone = () => {
+    if(!this.state.sorted) {
+      this.setState({ employees: this.state.employees.sort((a, b) => (a.phone > b.phone) ? 1 : -1) });
+      this.setState({ sorted: true });
+      this.setState({ nameSorted: false });
+    } else {
+      this.setState ({ employees: this.state.employees.sort((a, b) => (a.phone > b.phone) ? -1 : 1) });
+      this.setState({ sorted: false });
+      this.setState({ nameSorted: false });
+    }
+  };
 
   render() {
     return (
