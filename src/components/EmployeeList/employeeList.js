@@ -1,5 +1,6 @@
 import React from 'react';
 import EmployeeCard from '../EmployeeCard/employeeCard';
+import './style.css';
 
 const EmployeeList = ({employees, formatDate}) => {
     return (
