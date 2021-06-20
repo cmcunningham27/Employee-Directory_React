@@ -10,7 +10,8 @@ class App extends Component {
   state = {
     employees: [],
     sorted: false,
-    nameSorted: false
+    nameSorted: false,
+    searchTerm: ''
   };
 
   componentDidMount() {
