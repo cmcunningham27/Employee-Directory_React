@@ -10,6 +10,9 @@ const EmployeeList = () => {
                 <p className='parg-2'>
                     Name
                 </p>
+                <p className='parg-3'>
+                    Phone
+                </p>
             </div>
             
         </div>
