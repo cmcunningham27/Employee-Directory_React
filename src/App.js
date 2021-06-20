@@ -27,6 +27,12 @@ class App extends Component {
       .catch(err => console.log(err));
   };
 
+  formatDate = (date) => {
+    date = new Date(date);
+    let dob = date.toLocaleDateString();
+    return dob;
+  };
+
   render() {
     return (
       <div className='App'>
