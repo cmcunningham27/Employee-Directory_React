@@ -1,0 +1,5 @@
+.App-search {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
