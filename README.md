@@ -2,9 +2,10 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-Red.svg)
 
 ## Descriptions
+A React app that allows its users to view all employees in a directory and search by typing in a name or sorting employees by Name or Phone.
 ![Beginning](./assets/images/start.png)
 ![Start Employees](./assets/images/employees.png)
-![Sort By Name](./assets/images/name.png)
+![Sort By Name](./assets/images/by_name.png)
 ![Sort By Phone](./assets/images/phone.png)
 ![Employee Name](./assets/images/emp_name.png)
 
