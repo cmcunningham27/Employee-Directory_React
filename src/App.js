@@ -65,9 +65,17 @@ class App extends Component {
     this.setState({ searchTerm: event.target.value.toLowerCase() });
     this.setState({ filteredEmployees: this.state.employees.filter(employee => employee.name.toLowerCase().startsWith(this.state.searchTerm.toLowerCase())) });
     this.setState({ nameSorted: true });
-  }
+  };
 
   render() {
+
+    let list;
+    if(!this.state.nameSorted) {
+
+    } else {
+
+    };
+
     return (
       <div className='App'>
         <Header />
