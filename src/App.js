@@ -39,7 +39,7 @@ class App extends Component {
         <Header />
         <Wrapper backgroundColor='#ECF0F1'>
           <Search />
-          <EmployeeList employees={this.state.employees} />
+          <EmployeeList employees={this.state.employees} formatDate={this.formatDate}/>
         </Wrapper>
       </div>
   )
