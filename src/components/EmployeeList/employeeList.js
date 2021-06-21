@@ -2,6 +2,7 @@ import React from 'react';
 import EmployeeCard from '../EmployeeCard/employeeCard';
 import './style.css';
 
+//displays column names row above each employee card, sends a formatted date and each employee information to the EmployeeCard component
 const EmployeeList = ({employees, formatDate}) => {
     return (
         <div className='App-employeeList'>
