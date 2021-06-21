@@ -25,7 +25,7 @@ A React app that allows its users to view all employees in a directory and searc
 - [Questions](#questions)
 
 ## Project's aim
-1. Give users the ability to view their entire employee directory at once so that they have quick access to their information. This does not include private information! They will see an image of each employee along with their name, phone number, email, and date of birth. Two buttons will allow the to sort the employees by Name in alphabetical order (ascending or descending) and by Phone (ascending or descending). If they wish to find a specific employee, they may enter the employee' name in the input box.
+Give users the ability to view their entire employee directory at once so that they have quick access to their information. This does not include private information! They will see an image of each employee along with their name, phone number, email, and date of birth. Two buttons will allow the to sort the employees by Name in alphabetical order (ascending or descending) and by Phone (ascending or descending). If they wish to find a specific employee, they may enter the employee' name in the input box.
 
 ## Usage
 1. Upon visiting the app, scroll down to see all employees.

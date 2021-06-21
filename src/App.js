@@ -7,6 +7,7 @@ import EmployeeList from './components/EmployeeList/employeeList';
 import './App.css';
 
 class App extends Component {
+  //default state before user input
   state = {
     employees: [],
     sorted: false,
@@ -15,6 +16,7 @@ class App extends Component {
     filteredEmployees: []
   };
 
+  //calls API and gives state object values
   componentDidMount() {
     API.getEmployees()
       .then((res) => {
@@ -32,12 +34,14 @@ class App extends Component {
       .catch(err => console.log(err));
   };
 
+  //formats the collected dates to an easily read format
   formatDate = (date) => {
     date = new Date(date);
     let dob = date.toLocaleDateString();
     return dob;
   };
 
+  //sorts names A-Z or Z-A in employees array, makes sure nameSorted is false, and makes sorted true or false
   handleSortByName = () => {
     if(!this.state.sorted) {
       this.setState({ employees: this.state.employees.sort((a, b) => (a.name > b.name) ? 1 : -1) });
@@ -50,6 +54,7 @@ class App extends Component {
     }
   };
 
+  //sorts phone numbers 1-9 or 9-1 in employees array, makes sure nameSorted is false, and makes sorted true or false
   handleSortByPhone = () => {
     if(!this.state.sorted) {
       this.setState({ employees: this.state.employees.sort((a, b) => (a.phone > b.phone) ? 1 : -1) });
@@ -62,6 +67,7 @@ class App extends Component {
     }
   };
 
+  //sorts employees according to starting characters and stores them in filteredEmployees array, gives searchTerm a value, and makes nameSorted true
   handleByName = async (event) => {
     await this.setState({ searchTerm: event.target.value.toLowerCase() });
     this.setState({ filteredEmployees: this.state.employees.filter(employee => employee.name.toLowerCase().startsWith(this.state.searchTerm.toLowerCase())) });
@@ -69,14 +75,14 @@ class App extends Component {
   };
 
   render() {
-
+    //sends employees or filteredEmployees array depending on whether nameSorted is true or false
     let list;
     if(!this.state.nameSorted) {
       list = <EmployeeList employees={this.state.employees} formatDate={this.formatDate} />;
     } else {
       list = <EmployeeList employees={this.state.filteredEmployees} formatDate={this.formatDate} />;
     };
-
+    //sends necessary props to children componentes to render on the app
     return (
       <div className='App'>
         <Header />
