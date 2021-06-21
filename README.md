@@ -31,7 +31,11 @@ A React app that allows its users to view all employees in a directory and searc
 1. 
 
 ## Technologies
-* 
+* React
+* Axios
+* CSS
+* Bootstrap
+* HTML
 
 ## License
 This project is licensed under the MIT license.
