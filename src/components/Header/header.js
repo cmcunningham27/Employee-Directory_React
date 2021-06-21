@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../logo256.png';
 
+//displays the header element with image, name of App, and description
 const Header = () => {
     return (
         <header className="App-header">
