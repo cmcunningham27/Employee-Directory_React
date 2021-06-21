@@ -2,7 +2,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-Red.svg)
 
 ## Descriptions
-A React app that allows its users to view all employees in a directory and search by typing in a name or sorting employees by Name or Phone.
+A React app that allows its users to view all employees in a directory and search by typing in a name or sort employees by Name or Phone.
 ![Beginning](./assets/images/start.png)
 ![Start Employees](./assets/images/employees.png)
 ![Sort By Name](./assets/images/by_name.png)
@@ -37,10 +37,10 @@ A React app that allows its users to view all employees in a directory and searc
 This project is licensed under the MIT license.
 
 ## Complications
- 
+* 
 
 ## Features
-In the future I would like to 
+In the future I would like to have links attached to each employee's name that would connect the user to that employees page that would include more in-depth information about themselves. A department column would be a great addition. However, that was not part of the information that was in the Random User API.
 
 ## Questions
 [GitHub Profile](https://github.com/cmcunningham27)
